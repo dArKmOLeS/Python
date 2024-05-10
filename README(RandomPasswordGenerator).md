@@ -40,5 +40,8 @@ Requirements
 Python 3.x
 No additional libraries or packages are required.
 
+Contributors
+Anmol Kumar Srivastava (dArKmOLeS)
+
 License
 This project is licensed under the MIT License. See the LICENSE file for details.

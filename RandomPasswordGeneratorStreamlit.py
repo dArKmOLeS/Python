@@ -60,3 +60,10 @@ else:
             counter += 1
     else:
         stm.write("Choose characters.")
+stm.divider()
+col3, col4 = stm.columns(2)
+with col3:
+    stm.caption("Creator : Anmol Kumar Srivastava")
+with col4:
+    stm.caption("Github : dArKmOLeS")
+stm.divider()

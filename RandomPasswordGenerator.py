@@ -1,6 +1,9 @@
 #Random Password Generator in python (terminal based)
-------------------------------------------------------------------------------------------------------
-
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#In this program, i have created a random password generator, 
+#that allows the user to select which characters he/she wants to include and then 
+#generate a list of 5 passwords from which he chooses a final password
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------
 import random
 import string
 

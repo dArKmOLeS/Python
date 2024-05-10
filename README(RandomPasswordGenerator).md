@@ -11,7 +11,7 @@ Allows users to select a final password from the generated list.
 
 Usage
 Run the script in a Python environment (e.g., terminal, command prompt) by executing the following command:
-python password_generator.py
+python RandomPasswordGenerator.py
 Enter the desired length of the password when prompted.
 Answer the following questions to specify which character types you want to include in the password:
 "Include Lowercase characters (Yes/No): "

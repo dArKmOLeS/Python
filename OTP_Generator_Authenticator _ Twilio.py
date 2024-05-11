@@ -32,8 +32,8 @@ def set_up():
 def send_otp(number, otp, client):
     client.messages.create(
         body='Your One Time Password is : ' + otp,
-        from_='+19386665951',
-        to='+91' + number
+        from_='Your Twilio Number',
+        to='Country Code' + number
     )
 
 while True:

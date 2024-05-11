@@ -7,17 +7,22 @@ import string
 
 stm.title("Password-Generator")
 
-def passwordGenerator(length,characters):
-    passwords = []
+def passwordGenerator(length, characters):
+    passwords = ['','','','','']
     all_characters = ''
     for i in characters:
         all_characters += i
     for i in range(5):
-        password = ''
-        for j in range(length):
+        password = []
+        for j in range(len(characters)):
+            random_character = random.choice(characters[j])
+            password.append(random_character)
+        for j in range(length-len(characters)):
             random_character = random.choice(all_characters)
-            password = password + random_character
-        passwords.append(password)
+            password.append(random_character)
+        random.shuffle(password)
+        for j in range(length):
+            passwords[i] += password[j]
     return passwords
 
 length = stm.slider("Length of Password?",0,20,4)

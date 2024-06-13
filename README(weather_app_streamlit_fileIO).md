@@ -25,7 +25,7 @@ streamlit run weather_app.py
 
 File Structure
 weather_app.py: Main application script using Streamlit.
-cities.txt: Text file containing city names and descriptions.
+cities.txt: Text file containing city names and descriptions. Format: city|description
 
 Usage
 Select a city from the dropdown menu.

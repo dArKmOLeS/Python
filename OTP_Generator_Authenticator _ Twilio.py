@@ -2,8 +2,8 @@
 #Code By :- Anmol Kumar Srivastava (dArKmOLeS)
 #------------------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------------------
-#Generates, sends and authenticates OTP 
-#Using Twilio's API for sending messages
+#Generates, sends and authenticates OTP.
+#Using Twilio's API for sending messages.
 #------------------------------------------------------------------------------------------------------------------------------------------------------
 import random
 import string
@@ -41,11 +41,11 @@ def send_otp(number, otp, client):
     )
 
 while True:
-    Number = input("Enter your Mobile Number :")
-    if len(Number) == 10:
+    number = input("Enter your Mobile Number :")
+    if len(number) == 10:
         client = set_up()
         otp = otp_generator()
-        send_otp(Number, otp, client)
+        send_otp(number, otp, client)
         otp_authenticator(otp, 3)
         break
     else:
